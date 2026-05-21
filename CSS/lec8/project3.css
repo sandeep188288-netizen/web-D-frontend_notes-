@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+/* SPACE */
+.space{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.sun{
+    width: 160px;
+    height: 160px;
+    background: radial-gradient(circle, yellow, orange, red);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 40px 20px orange;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+/* orbit */
+.orbit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px dashed rgb(153, 132, 132);
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    animation: rotate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+/* planet */
+.planet{
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 9px;
+    color: rgb(41, 38, 38);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .mercury{ width: 240px; height: 220px; animation-duration: 4s; }
+.venus{ width: 320px; height: 290px; animation-duration: 6s;}
+.earth{width: 400px; height: 360px; animation-duration: 8s;}
+.mars{width: 480px; height: 430px; animation-duration: 10s;}
+.jupiter{width: 560px; height: 500px; animation-duration: 14s;}
+.saturn{width: 640px; height: 560px; animation-duration: 18s;}
+.uranus{width: 720px; height: 620px; animation-duration: 22s;}
+.neptune{width: 800px; height: 680px; animation-duration: 26s;}
+
+.mercury .planet{ width: 28px; height: 28px; background: gray; box-shadow: 0px 0px 5px 2px gray;}
+.venus .planet{ width: 26px; height: 26px; background: goldenrod; box-shadow: 0px 0px 5px 2px goldenrod;}
+.earth .planet{ width: 30px; height: 30px; background: dodgerblue;box-shadow: 0px 0px 5px 2px dodgerblue; }
+.mars .planet{ width: 25px; height: 25px; background: red;box-shadow: 0px 0px 5px 2px red; }
+.jupiter .planet{ width: 40px; height: 40px; background: peru; box-shadow: 0px 0px 5px 2px peru;}
+.saturn .planet{ width: 36px; height: 34px; background: khaki; box-shadow: 0px 0px 5px 2px khaki;}
+.uranus .planet{ width: 30px; height: 28px; background: lightblue; box-shadow: 0px 0px 5px 2px lightblue;}
+.neptune .planet{ width: 40px; height: 38px; background: blue; box-shadow: 0px 0px 5px 2px blue;} */
+
+.mercury{ width: 220px; height: 220px; animation-duration: 4s; }
+.venus{ width: 280px; height: 280px; animation-duration: 6s; }
+.earth{ width: 350px; height: 350px; animation-duration: 8s; }
+.mars{ width: 420px; height: 420px; animation-duration: 10s; }
+.jupiter{ width: 500px; height: 500px; animation-duration: 14s; }
+.saturn{ width: 580px; height: 580px; animation-duration: 18s; }
+.uranus{ width: 660px; height: 660px; animation-duration: 22s; }
+.neptune{ width: 740px; height: 740px; animation-duration: 26s; }
+
+/* PLANET COLORS & SIZES */
+.mercury .planet{ width: 28px; height: 28px; background: gray; box-shadow: 0px 0px 5px 2px gray;}
+.venus .planet{ width: 26px; height: 26px; background: goldenrod; box-shadow: 0px 0px 5px 2px goldenrod;}
+.earth .planet{ width: 30px; height: 30px; background: dodgerblue;box-shadow: 0px 0px 5px 2px dodgerblue; }
+.mars .planet{ width: 25px; height: 25px; background: red;box-shadow: 0px 0px 5px 2px red; }
+.jupiter .planet{ width: 40px; height: 40px; background: peru; box-shadow: 0px 0px 5px 2px peru;}
+.saturn .planet{ width: 36px; height: 34px; background: khaki; box-shadow: 0px 0px 5px 2px khaki;}
+.uranus .planet{ width: 30px; height: 28px; background: lightblue; box-shadow: 0px 0px 5px 2px lightblue;}
+.neptune .planet{ width: 40px; height: 38px; background: blue; box-shadow: 0px 0px 5px 2px blue;} 
+
+@keyframes rotate{
+    from{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

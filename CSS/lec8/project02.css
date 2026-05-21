@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+/* SPACE */
+.space{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/* SUN */
+.sun{
+    width: 160px;
+    height: 160px;
+    background: radial-gradient(circle, yellow, orange, red);
+    /* background-color: red; */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 40px 20px orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+}
+
+/* ORBIT */
+.orbit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px dashed rgba(255,255,255,0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate linear infinite;
+}
+
+/* PLANET */
+.planet{
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    color: white;
+    font-size: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PLANET SIZES */
+.mercury{ width: 220px; height: 220px; animation-duration: 4s; }
+.venus{ width: 300px; height: 300px; animation-duration: 6s; }
+.earth{ width: 400px; height: 400px; animation-duration: 8s; }
+.mars{ width: 520px; height: 520px; animation-duration: 10s; }
+
+/* PLANET COLORS */
+.mercury .planet{
+    width: 20px;
+    height: 20px;
+    background: gray;
+}
+
+.venus .planet{
+    width: 28px;
+    height: 28px;
+    background: goldenrod;
+}
+
+.earth .planet{
+    width: 30px;
+    height: 30px;
+    background: dodgerblue;
+}
+
+.mars .planet{
+    width: 26px;
+    height: 26px;
+    background: red;
+}
+
+/* MOON */
+.moon-orbit{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px dashed rgba(255,255,255,0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 2s linear infinite;
+}
+
+.moon{
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -4px;
+    transform: translateY(-50%);
+}
+
+/* KEYFRAME */
+@keyframes rotate{
+    from{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

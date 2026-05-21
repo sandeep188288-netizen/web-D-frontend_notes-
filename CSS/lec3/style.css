@@ -1,0 +1,17 @@
+h3{
+    background-color: yellow;
+    /* position: fixed; */
+    top: 0px;
+    left: 250px;
+}
+h4{
+    background-color: azure;
+    position: sticky;
+    top: 0px;
+}
+p{
+    background-color: blueviolet;
+    position: absolute;
+    top: 70px;
+    left: 50px;
+}
