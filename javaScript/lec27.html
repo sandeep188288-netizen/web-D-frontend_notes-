@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lec27.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="card">
+
+      <h1>Astrology Insights</h1>
+
+      <form id="astroForm">
+
+        <div class="input-box">
+          <label>First Name:</label>
+          <input type="text" id="name" required>
+        </div>
+
+        <div class="input-box">
+          <label>Surname:</label>
+          <input type="text" id="surname" required>
+        </div>
+
+        <div class="input-box">
+          <label>Date of Birth (Day):</label>
+          <input type="number" id="day" required>
+        </div>
+
+        <div class="input-box">
+          <label>Month:</label>
+          <input type="number" id="month" required>
+        </div>
+
+        <div class="input-box">
+          <label>Year:</label>
+          <input type="number" id="year" required>
+        </div>
+
+        <button type="submit">Get Insights</button>
+
+      </form>
+
+      <div class="result" id="result"></div>
+
+    </div>
+
+  </div>
+  <script src="lec27.js"></script>
+</body>
+</html>
