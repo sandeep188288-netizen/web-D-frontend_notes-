@@ -1,0 +1,83 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* Body */
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#6a5cff,#3aa0ff);
+}
+
+/* Container */
+.container{
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    width:320px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+.container h1{
+    margin-bottom:20px;
+    color:#333;
+}
+
+/* Board */
+.board{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    margin-bottom:20px;
+    justify-items:center;
+}
+
+/* Cell */
+.cell{
+    width:80px;
+    height:80px;
+    background:#f5f5f5;
+    border-radius:8px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:32px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.cell:hover{
+    background:#e0e0e0;
+}
+
+/* Button */
+#restartButton{
+    background:#2ecc71;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+#restartButton:hover{
+    background:#27ae60;
+}
+
+/* Winning message */
+.winning-message{
+    margin-top:15px;
+    font-size:18px;
+    font-weight:bold;
+    color:#333;
+}
